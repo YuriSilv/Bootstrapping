@@ -1,0 +1,81 @@
+<mxfile host="65bd71144e">
+    <diagram id="6a731a19-8d31-9384-78a2-239565b7b9f0" name="Page-1">
+        <mxGraphModel dx="690" dy="1060" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-55" value="&lt;h1&gt;&lt;span style=&quot;font-weight: normal&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;font-size: 12px ; font-weight: normal&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;b style=&quot;font-size: 12px&quot;&gt;Estimativas estatísticas&lt;/b&gt;&lt;span style=&quot;font-size: 12px ; font-weight: normal&quot;&gt;:&lt;/span&gt;&lt;br&gt;&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;-Média&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;&lt;span&gt;-Mediana&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;-Variância&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;-Desvio Padrão&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;-Desvio absoluto médio&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;white-space: pre&quot;&gt;&#9;&lt;/span&gt;&lt;span&gt;-Proporção&lt;/span&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="10" y="-810" width="350" height="500" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-56" value="Start" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="-720" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-57" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xqz2PEh1tpsJY39lvx3I-56" target="xqz2PEh1tpsJY39lvx3I-68" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="360" y="-560" as="sourcePoint"/>
+                        <mxPoint x="475" y="-660" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-59" value="choose statistical estimate" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="415" y="-570" width="120" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-61" value="extract n random values from the sample and register them" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="415" y="-490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-62" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xqz2PEh1tpsJY39lvx3I-59" target="xqz2PEh1tpsJY39lvx3I-61" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="474.57" y="-540" as="sourcePoint"/>
+                        <mxPoint x="474.57" y="-490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="xqz2PEh1tpsJY39lvx3I-64" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="475" y="-270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-64" value="calculate the estimate of this new sample" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="415" y="-380" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-65" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xqz2PEh1tpsJY39lvx3I-61" target="xqz2PEh1tpsJY39lvx3I-64" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="475" y="-420" as="sourcePoint"/>
+                        <mxPoint x="474.57" y="-360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="xqz2PEh1tpsJY39lvx3I-67" target="xqz2PEh1tpsJY39lvx3I-61" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="650" y="-460" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="660" y="-225"/>
+                            <mxPoint x="660" y="-460"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xqz2PEh1tpsJY39lvx3I-67" target="xqz2PEh1tpsJY39lvx3I-74" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-67" value="counter = R?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="427.5" y="-270" width="95" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-68" value="counter = 0" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="420" y="-640" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-69" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="xqz2PEh1tpsJY39lvx3I-68" target="xqz2PEh1tpsJY39lvx3I-59" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="450" y="-460" as="sourcePoint"/>
+                        <mxPoint x="565" y="-560" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-72" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="555" y="-250" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-74" value="calculate the standard deviation, plot the histogram and confidence interval" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="415" y="-120" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="xqz2PEh1tpsJY39lvx3I-76" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="470" y="-170" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
