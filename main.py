@@ -1,8 +1,9 @@
+from array import array
 import random
 import numpy as np
 from matplotlib import pyplot as plt
 
-def bootstrapping(estimate:str, n:int, repeat:int):
+def bootstrapping(sample:array,estimate:str, n:int, repeat:int):
     counter = 0
     results = []
     if estimate == 'mean':
