@@ -1,22 +1,49 @@
-from array import array
 import random
 import numpy as np
 from matplotlib import pyplot as plt
 
-def bootstrapping(sample:array,estimate:str, n:int, repeat:int):
+def bootstrapping(sample, estimate:str, n:int, repeat:int, obs_value = 0):
     counter = 0
     results = []
+    above_values = 0
+    bellow_values = 0
     if estimate == 'mean':
         while counter != repeat:
-            results.append(np.mean(random.choices(sample,k=n)))
+            v = np.mean(random.choices(sample,k=n))
+            results.append(v)
             counter += 1
+            if v >= obs_value:
+                above_values += 1
+            else:
+                bellow_values += 1
     elif estimate == 'median':
-        pass
+        while counter != repeat:
+            v = np.mean(random.choices(sample,k=n))
+            results.append(v)
+            counter += 1
+            if v >= obs_value:
+                above_values += 1
+            else:
+                bellow_values += 1
     elif estimate == 'var':
-        pass
-    elif estimate == 'sd':
-        pass
+        while counter != repeat:
+            v = np.mean(random.choices(sample,k=n))
+            results.append(v)
+            counter += 1
+            if v >= obs_value:
+                above_values += 1
+            else:
+                bellow_values += 1
+    elif estimate == 'std':
+        while counter != repeat:
+            v = np.mean(random.choices(sample,k=n))
+            results.append(v)
+            counter += 1
+            if v >= obs_value:
+                above_values += 1
+            else:
+                bellow_values += 1
 
-    del counter
-    return results
-    
+    del counter,v
+    p_value = above_values/(above_values+bellow_values)
+    return (results, p_value)
