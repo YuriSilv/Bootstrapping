@@ -1,6 +1,5 @@
 import random
 import numpy as np
-from matplotlib import pyplot as plt
 
 def bootstrapping(sample, estimate:str, n:int, repeat:int, obs_value = 0):
     counter = 0
@@ -18,7 +17,7 @@ def bootstrapping(sample, estimate:str, n:int, repeat:int, obs_value = 0):
                 bellow_values += 1
     elif estimate == 'median':
         while counter != repeat:
-            v = np.mean(random.choices(sample,k=n))
+            v = np.median(random.choices(sample,k=n))
             results.append(v)
             counter += 1
             if v >= obs_value:
@@ -27,7 +26,7 @@ def bootstrapping(sample, estimate:str, n:int, repeat:int, obs_value = 0):
                 bellow_values += 1
     elif estimate == 'var':
         while counter != repeat:
-            v = np.mean(random.choices(sample,k=n))
+            v = np.var(random.choices(sample,k=n))
             results.append(v)
             counter += 1
             if v >= obs_value:
@@ -36,7 +35,7 @@ def bootstrapping(sample, estimate:str, n:int, repeat:int, obs_value = 0):
                 bellow_values += 1
     elif estimate == 'std':
         while counter != repeat:
-            v = np.mean(random.choices(sample,k=n))
+            v = np.std(random.choices(sample,k=n))
             results.append(v)
             counter += 1
             if v >= obs_value:
